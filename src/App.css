@@ -19,3 +19,8 @@
   border-radius: 20px;
   padding: 15px;
 }
+.flag-img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
