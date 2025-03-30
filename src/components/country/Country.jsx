@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Country({ country }) {
+export default function Country({ country, handleVisitedCountries}) {
     const { name, flags, independent, languages, capital } = country;
     
     const [visit, setVisit] = useState(false);
@@ -13,10 +13,11 @@ export default function Country({ country }) {
         // else{
         //     setVisit(true)
         // }
-        setVisit(!visit)
+        setVisit(!visit);
+        handleVisitedCountries(country);
     }
     return (
-        <div className={`card ${visit ? "country-visited" : "country-not-visited"}`}>
+        <div className={`card ${visit && "country-visited"}`}>
             <img className="flag-img" src={flags.png} alt={flags.alt} />
             <h2> {name.common} </h2>
             <div className="country-bio">
