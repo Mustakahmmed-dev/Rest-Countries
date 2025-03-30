@@ -6,11 +6,14 @@ export default function Countries({countriesPromise}){
     // console.log(countries);
  
     return(
-        <div className="card-container">
+       <div>
+        <h1 className='text-title'>Rest Countries: {countries.length} </h1>
+         <div className="card-container">
             {
-                countries.map(country => <Country key={country.ccn3} country={country}></Country>)
+                countries.map(country => <Country key={country.cca3} country={country}></Country>)
                 
             }
         </div>
+       </div>
     )
 }

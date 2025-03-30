@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <h1 className='text-title'>Rest Countries </h1>
+      
 
       <Suspense fallback={<h2>Countries are loading...</h2>}>
         <div>

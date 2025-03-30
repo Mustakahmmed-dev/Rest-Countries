@@ -15,9 +15,19 @@
   gap: 20px;
 }
 .card{
-  background-color:cadetblue;
   border-radius: 20px;
   padding: 15px;
+}
+.country-visited{
+  background-color:cadetblue;
+}
+.btn-visited{
+  background-color: white;
+  color: black;
+}
+.btn-not-visited{
+  background-color: black;
+  color: white;
 }
 .flag-img{
   width: 100%;
